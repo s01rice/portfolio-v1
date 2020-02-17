@@ -1,13 +1,79 @@
 body {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    background-color: #111;
+    color: #a4d1ff;
+}
+
+header {
+    margin-left: 50px;
 }
 
 nav {
     margin: 0;
     padding: 0;
+    top: 0;
     width: 50px;
-    background-color: #303030;
+    background-color: #222;
     position: fixed;
     height: 100%;
     overflow: auto;
+}
+
+#nav-Site ul {
+    position: absolute;
+    top: 50%;
+    margin-top: -120px;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+}
+
+#nav-Social ul {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+}
+
+nav li a {
+    text-align: center;
+    text-decoration: none;
+    color: #888;
+    display: block;
+    height: 51px;
+}
+
+nav li i {
+    transition: all 0.2s ease;
+    opacity: 1;
+    font-size: 30px;
+    color: #444;
+    padding: 10px 0;
+}
+
+nav li p {
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-top: -30px;
+    opacity: 0;
+}
+
+#nav-Site a:hover i {
+    opacity: 0;
+}
+
+#nav-Site a:hover p {
+    color: #a4d1ff;
+    opacity: 1;
+}
+
+#nav-Social a:hover i {
+    color: #a4d1ff;
+}
+
+.active i {
+    color: #a4d1ff;
 }
