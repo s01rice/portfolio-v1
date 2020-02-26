@@ -2,10 +2,10 @@ window.onload = function() {
 
 	// Adjustable variables
 	var settings = {
-		pointDensity: 3,
+		pointDensity: 4,
 		connections: 1,
-		sizeVariation: 8.3,
-		velocity: 0.00003,
+		sizeVariation: 0.3,
+		velocity: 0.0001,
 		maxMovement: 50,
 		attractionRange: 400,
 		attractionFactor: 0.02,
@@ -20,7 +20,7 @@ window.onload = function() {
 		particleLength: 10,
 		flashRadius: 20,
 		flashOpacity: 0.6,
-		flashDecay: 0.2
+		flashDecay: 0.1
 	}
 
 	var start = null,
