@@ -18,6 +18,12 @@ body {
     color: #a4d1ff;
 }
 
+@media (max-width: 720px){
+    html {
+        font-size: 10px;
+    }
+}
+
 #canvas {
     position: fixed;
     width: 100%;
@@ -131,6 +137,27 @@ section {
 
 section p {
     font-size: 20px;
+}
+
+.skill-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: space-between;
+    list-style: none;
+}
+
+.skill-container li {
+    margin: 30px;
+    text-align: center;
+}
+
+.skill-container i {
+    font-size: 6rem;
+    color: #a4d1ff;
+}
+
+.skill-container p {
+    font-size: 1rem;
 }
 
 footer {
