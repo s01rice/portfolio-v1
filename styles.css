@@ -53,13 +53,13 @@ nav {
     list-style: none;
 }
 
-#nav-Social ul {
+/* #nav-Social ul {
     position: absolute;
     bottom: 0;
     padding: 0;
     width: 100%;
     list-style: none;
-}
+} */
 
 nav li a {
     text-align: center;
@@ -158,6 +158,26 @@ section p {
 
 .skill-container p {
     font-size: 1rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+}
+
+.contact-container li {
+    margin: 30px;
+}
+
+.contact-container i {
+    font-size: 4rem;
+    color: #a4d1ff;
+}
+
+.mail:after {
+    display: none;
+    content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
 }
 
 footer {
